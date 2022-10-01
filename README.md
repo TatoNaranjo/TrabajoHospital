@@ -1,0 +1,8 @@
+# TrabajoHospital
+
+Trabajo Hecho Por: Santiago Naranjo Herrera
+
+IMPORTANTE: SI EJECUTAS EL PROGRAMA DESDE NETBEANS TE PEDIRÁ UN USUARIO Y UNA CONTRASEÑA PARA PODER INICIAR EL SERVIDOR DE TOMCAT
+
+Usuario: Tato
+Contraseña: SantiagoNaranjo1
