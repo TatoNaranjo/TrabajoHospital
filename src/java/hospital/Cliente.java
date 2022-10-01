@@ -1,7 +1,15 @@
 
 package hospital;
 public class Cliente extends ClasePadre {
-
+  //Se crean las variables que componen las características de un Cliente del Hospital
+     private String dirResidencia;
+    private String lugarAtencion;
+    private String motivoConsulta;
+    private String fecha;
+    private String medicoAtendiendo;
+    
+    //Encapsulamos las Variables
+    
     /**
      * @return the dirResidencia
      */
@@ -71,15 +79,13 @@ public class Cliente extends ClasePadre {
     public void setMedicoAtendiendo(String medicoAtendiendo) {
         this.medicoAtendiendo = medicoAtendiendo;
     }
-   
+   //Fin del Encapsulado de Variables.
+    
+    //Creamos el Constructor normal de la Clase Cliente
     public Cliente(){
     super();
     }
- private String dirResidencia;
-    private String lugarAtencion;
-    private String motivoConsulta;
-    private String fecha;
-    private String medicoAtendiendo;
+//Creamos el Constructor Sobrecargado de la Clase cliente, la cual también hereda las características de ClasePadre
     public Cliente(String nombre, String apellido, String sexo, String dirResidencia, String lugarAtencion, String motivoConsulta,  String medicoAtendiendo,String fecha) {
         super(nombre, apellido, sexo);
         this.dirResidencia = dirResidencia;

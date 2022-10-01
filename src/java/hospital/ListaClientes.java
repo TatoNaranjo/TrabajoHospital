@@ -1,15 +1,13 @@
 
 package hospital;
+//Importamos la Herramienta ArrayList
 import java.util.ArrayList;
 public class ListaClientes {
 
-   Medico Jose = new Medico("29880","Jose","Feliciano","Masculino");
-   Medico Sofia = new Medico("98070","Sofia","Castaño","Femenino"); 
-   Medico Carla = new Medico("29881","Carla" , "Padiol", "Femenino");
-   Medico Lorenzo = new Medico("92609","Lorenzo", "Herrera", "Masculino");
- 
+ //Se Crea la función ListaSanRafael.
    public String listaSanRafael(){
        String lista = "";
+       //Se Inicializan las ArrayLists con las características del Cliente
    ArrayList<String> nombre = new ArrayList<String>();
    ArrayList<String> apellido = new ArrayList<String>();
    ArrayList<String> sexo = new ArrayList<String>();
@@ -17,6 +15,8 @@ public class ListaClientes {
    ArrayList<String> razon = new ArrayList<String>();
    ArrayList<String> medicoAtendiendo = new ArrayList<String>();
    ArrayList<String> fechaAtencion = new ArrayList<String>();
+   
+   //Creamos los Objetos de Tipo Clientes y Las Añadimos a Sus Respectivos ArrayLists
     Cliente Juan_Perez = new Cliente("Juan","Perez","Masculino","Calle Oxford","Hospital San Rafael","Quimioterapia","Carla Padiol","2 de Abril");
     
     nombre.add(Juan_Perez.getNombre()); apellido.add(Juan_Perez.getApellido()); sexo.add(Juan_Perez.getSexo()); direccion.add(Juan_Perez.getDirResidencia()); 
@@ -42,6 +42,7 @@ public class ListaClientes {
   nombre.add(Maria_Batista.getNombre()); apellido.add(Maria_Batista.getApellido()); sexo.add(Maria_Batista.getSexo()); direccion.add(Maria_Batista.getDirResidencia()); 
     razon.add(Maria_Batista.getMotivoConsulta()); medicoAtendiendo.add(Maria_Batista.getMedicoAtendiendo()); fechaAtencion.add(Maria_Batista.getFecha()); 
 
+    //Se Crea un String con cada una de las Características del Cliente
      for (int i = 0; i < nombre.size(); i++) {
           lista = lista +("----------//----------");
           lista = lista + "<br>";
@@ -57,11 +58,14 @@ public class ListaClientes {
           lista = lista +("----------//----------");
           lista = lista +("<br>");
        }
-       
+       //Se Retorna.
     return lista;
    }
    
+   
+   //Creamos la función que nos da la lista del Hospital Santa Maria
    public String listaSantaMaria(){
+   //Se Inicializan las ArrayLists con las características del Cliente
        String lista = "";
    ArrayList<String> nombre = new ArrayList<String>();
    ArrayList<String> apellido = new ArrayList<String>();
@@ -71,6 +75,7 @@ public class ListaClientes {
    ArrayList<String> medicoAtendiendo = new ArrayList<String>();
    ArrayList<String> fechaAtencion = new ArrayList<String>();
    
+   //Creamos los Objetos de Tipo Clientes y Las Añadimos a Sus Respectivos ArrayLists
      Cliente Emiliano_Ramirez = new Cliente("Emiliano","Ramirez","Masculino","Calle 80","Clinica Santa Maria","Resonancia de Cuerpo completo","Jose Feliciano","6 de Octubre");
     
     nombre.add(Emiliano_Ramirez.getNombre()); apellido.add(Emiliano_Ramirez.getApellido()); sexo.add(Emiliano_Ramirez.getSexo()); direccion.add(Emiliano_Ramirez.getDirResidencia()); 
@@ -96,6 +101,7 @@ public class ListaClientes {
   nombre.add(Mariana_Rivas.getNombre()); apellido.add(Mariana_Rivas.getApellido()); sexo.add(Mariana_Rivas.getSexo()); direccion.add(Mariana_Rivas.getDirResidencia()); 
     razon.add(Mariana_Rivas.getMotivoConsulta()); medicoAtendiendo.add(Mariana_Rivas.getMedicoAtendiendo()); fechaAtencion.add(Mariana_Rivas.getFecha()); 
 
+    //Se Crea un String con cada una de las Características del Cliente
       for (int i = 0; i < nombre.size(); i++) {
           lista = lista +("----------//----------");
           lista = lista + "<br>";
@@ -104,14 +110,14 @@ public class ListaClientes {
                           "Apellido del Cliente: "+apellido.get(i)+"<br>"+
                           "Sexo: "+sexo.get(i)+ "<br>"+
                           "Dirección de Residencia: " + direccion.get(i)+"<br>"+
-                          "Hospital En Que Fue Atendido: Hospital San Rafael <br>"+
+                          "Hospital En Que Fue Atendido: Hospital Santa Maria <br>"+
                           "Causa: "+ razon.get(i)+"<br>"+
                           "Medico Que lo Atiende: "+ medicoAtendiendo.get(i)+"<br>"+
                           "Fecha: "+ fechaAtencion.get(i) + "<br>";
           lista = lista +("----------//----------");
           lista = lista +("<br>");
        }
-   
+   //Se Retorna.
     return lista;
    }
 }

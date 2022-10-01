@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Lista de Pacientes HOSPITAL SAN RAFAEL</title>
+        <title>Lista de Pacientes HOSPITAL SANTA MARIA</title>
     </head>
     <body>
         <%@ page import = "hospital.Hospital2" %>
